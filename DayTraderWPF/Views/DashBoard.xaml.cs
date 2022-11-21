@@ -10,14 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DayTraderWPF
+namespace DayTraderWPF.Views
 {
-    
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for DashBoard.xaml
+    /// </summary>
+    public partial class DashBoard : UserControl
     {
-        public MainWindow()
+        public DashBoard()
         {
             InitializeComponent();
         }

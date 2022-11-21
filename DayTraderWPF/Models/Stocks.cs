@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.Models
 {
-    internal class Stocks
+    public class Stocks
     {
     }
 }
