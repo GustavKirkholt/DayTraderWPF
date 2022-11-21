@@ -49,9 +49,8 @@ namespace DayTraderWPF.Models
         public string Conflict()
         {
 
-        string Conflict = "Insufficient funds";
-            return Conflict;
-        
+        return "Insufficient funds";
+
         }
 
     }
