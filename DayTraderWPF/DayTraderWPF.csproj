@@ -59,6 +59,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\BankAccount.cs" />
+    <Compile Include="Models\Algorithms.cs" />
     <Compile Include="Models\Stocks.cs" />
     <Compile Include="Views\DashBoard.xaml.cs">
       <DependentUpon>DashBoard.xaml</DependentUpon>
