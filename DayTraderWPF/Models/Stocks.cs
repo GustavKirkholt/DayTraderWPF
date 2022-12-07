@@ -25,12 +25,6 @@ namespace DayTraderWPF.Models
             this.price = p;
         }
 
-        public Stocks(decimal change, decimal opening, string n) :
-          this(0.0M, 0.0M, change, opening,  n, 0.0M)
-        {
-
-        }
-
         public virtual decimal HighPrice
         {
             get { return highPrice; }

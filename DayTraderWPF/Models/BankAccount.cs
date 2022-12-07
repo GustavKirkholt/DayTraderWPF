@@ -9,14 +9,15 @@ namespace DayTraderWPF.Models
     public class BankAccount
     {
         protected decimal balance;
-        public BankAccount(decimal b)
+        private static BankAccount instance = new BankAccount(100M);
+        private BankAccount(decimal b)
         {
             balance = b;
         }
 
-        public BankAccount() :
-          this(0.0M)
+        public static BankAccount Instance
         {
+            get { return instance; }
         }
 
         public virtual decimal Balance

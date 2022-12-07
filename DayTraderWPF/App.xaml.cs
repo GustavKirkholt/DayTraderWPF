@@ -16,8 +16,8 @@ namespace DayTraderWPF
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            BankAccount bankAccount = new BankAccount(100m);
 
+            BankAccount bankAccount = BankAccount.Instance;
             base.OnStartup(e);
         }
     }
