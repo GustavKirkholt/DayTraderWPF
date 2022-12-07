@@ -8,6 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
         <Button Content="LogIn" HorizontalAlignment="Center" Margin="0,282,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.571,0.584" Click="Button_Click"/>
-
+        
     </Grid>
 </UserControl>

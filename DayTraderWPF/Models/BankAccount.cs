@@ -17,6 +17,7 @@ namespace DayTraderWPF.Models
         public BankAccount() :
           this(0.0M)
         {
+
         }
 
         public virtual decimal Balance
