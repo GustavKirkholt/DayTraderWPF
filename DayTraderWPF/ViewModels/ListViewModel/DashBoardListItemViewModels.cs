@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DayTraderWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,20 @@ namespace DayTraderWPF.ViewModels
 {
     internal class DashBoardListItemViewModels : ViewModelBase
     {
-        public string Name { get; }
-        public decimal HighPrice { get; }
-        public decimal LowPrice { get; }
-        public decimal Change { get; }
+        public Stocks Stocks { get; }
 
-        public  DashBoardListItemViewModels(string name, decimal highprice, decimal lowprice, decimal change)
+        public string Name =>  Stocks.Name;
+        public decimal HighPrice => Stocks.HighPrice;
+        public decimal LowPrice => Stocks.LowPrice;
+        public decimal Change => Stocks.Change;
+        public decimal Price => Stocks.GetPrice;
+        public decimal Open => Stocks.Opening;
+        public Boolean isOwned => Stocks.IsOwned;
+
+
+        public DashBoardListItemViewModels(Stocks stocks)
         {
-            Name = name;
-            HighPrice = highprice;
-            LowPrice = lowprice;
-            Change = change;
+            this.Stocks = stocks;
         }
-
     }
 }
