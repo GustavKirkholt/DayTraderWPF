@@ -14,8 +14,9 @@ namespace DayTraderWPF.Models
         protected decimal change;
         protected decimal opening;
         protected string name;
+        protected Boolean isOwned;
 
-        public Stocks(decimal h, decimal l, decimal change, decimal opening, string n, decimal  p)
+        public Stocks(decimal h, decimal l, decimal change, decimal opening, string n, decimal  p, bool isOwned)
         {
             this.highPrice = h;
             this.lowPrice = l;
@@ -23,6 +24,17 @@ namespace DayTraderWPF.Models
             this.opening = opening;
             this.name = n;
             this.price = p;
+            this.isOwned = isOwned;
+        }
+
+        public Boolean IsOwned() 
+        { 
+            return isOwned;
+        }
+
+        public virtual decimal GetPrice() 
+        { 
+            return price; 
         }
 
         public virtual decimal HighPrice

@@ -60,9 +60,12 @@
     </Compile>
     <Compile Include="Models\BankAccount.cs" />
     <Compile Include="Models\Stocks.cs" />
-    <Compile Include="ViewModels\DashBoardListItemViewModels.cs" />
-    <Compile Include="ViewModels\DashBoardListViewModel.cs" />
-    <Compile Include="ViewModels\DashBoardMainViewModel.cs" />
+    <Compile Include="Stores\BankAccountStore.cs" />
+    <Compile Include="Stores\StocksStore.cs" />
+    <Compile Include="ViewModels\ListViewModel\DashBoardListItemViewModels.cs" />
+    <Compile Include="ViewModels\ListViewModel\DashBoardListViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModels\DashboardMainDetailsViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModels\DashBoardMainViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\DashBoard.xaml.cs">
