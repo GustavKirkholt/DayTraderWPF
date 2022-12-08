@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DayTraderWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace DayTraderWPF
     {
         public MainWindow()
         {
+            var balance = BankAccount.Instance.Balance;
             InitializeComponent();
         }
     }

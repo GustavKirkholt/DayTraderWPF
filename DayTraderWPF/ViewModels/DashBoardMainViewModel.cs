@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.ViewModels
 {
-    internal class DashBoardMainViewModel
+    internal class DashBoardMainViewModel : ViewModelBase
     {
+        //HERE GOES VIEW  MODEL FOR  THE  NEWS SCREEN
     }
 }
