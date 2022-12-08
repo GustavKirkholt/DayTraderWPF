@@ -27,15 +27,6 @@ namespace DayTraderWPF.Models
             this.isOwned = isOwned;
         }
 
-        public Boolean IsOwned() 
-        { 
-            return isOwned;
-        }
-
-        public virtual decimal GetPrice() 
-        { 
-            return price; 
-        }
 
         public virtual decimal HighPrice
         {
@@ -61,6 +52,9 @@ namespace DayTraderWPF.Models
         {
             get { return opening; }
         }
+
+        public bool IsOwned { get; internal set; }
+        public decimal GetPrice { get; internal set; }
 
         public virtual decimal Transaction(decimal price)
         {

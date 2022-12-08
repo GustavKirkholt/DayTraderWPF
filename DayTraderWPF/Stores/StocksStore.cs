@@ -11,7 +11,7 @@ namespace DayTraderWPF.Stores
     {
         private Stocks _selectedStock;
 
-        public Stocks Stocks
+        public Stocks SelectedStocks
         {
             get 
             { 

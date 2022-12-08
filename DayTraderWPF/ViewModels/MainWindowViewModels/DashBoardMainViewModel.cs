@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DayTraderWPF.Stores;
 using System.Threading.Tasks;
 
 namespace DayTraderWPF.ViewModels

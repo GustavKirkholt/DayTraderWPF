@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using DayTraderWPF.Stores;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace DayTraderWPF.ViewModels
         private readonly ObservableCollection<DashBoardListItemViewModels> _dashBoardListItemViewModels;
         public IEnumerable<DashBoardListItemViewModels> dashBoardListItemViewModels => _dashBoardListItemViewModels;
 
-        public DashBoardListViewModel() 
+        public DashBoardListViewModel(StocksStore _selectedStocksStore) 
         {
             _dashBoardListItemViewModels = new ObservableCollection<DashBoardListItemViewModels>();
 
