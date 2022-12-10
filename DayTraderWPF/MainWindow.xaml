@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DayTraderWPF" xmlns:views="clr-namespace:DayTraderWPF.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="DayTrader" Height="450" Width="800">
     <Grid>
-        <views:LogIn/>
+
+        <StackPanel Orientation="Vertical" Width="60" HorizontalAlignment="Left"  Background="#A3A3A8">
+            <Image Source="C:\Users\XaDgs\Documents\GitHub\DayTraderWPF\DayTraderWPF\Resources\Images\LogoGreyBackground.png"/>
+            <Button Content="BtnNavDashboard" Click="BtnClickDashboard" Margin="5" />
+            <Button Content="BtnNavDashboard" Click="BtnClickDashboard" Margin="5"/>
+
+        </StackPanel>
+        <!--<views:MainWindowView/>-->
+
+        <Frame x:Name="FrameForPageContent" Margin="65,35,3,1
+               " Navigated="FrameForPageContent_Navigated"/>
+
     </Grid>
+
+    
+
+
 </Window>

@@ -1,4 +1,5 @@
 ﻿using DayTraderWPF.Models;
+using DayTraderWPF.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,16 @@ namespace DayTraderWPF
         {
             var balance = BankAccount.Instance.Balance;
             InitializeComponent();
+        }
+
+        private void FrameForPageContent_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
+        }
+
+        private void BtnClickDashboard(object sender, RoutedEventArgs e)
+        {
+            FrameForPageContent.Content = new DashboardPage();
         }
     }
 }
