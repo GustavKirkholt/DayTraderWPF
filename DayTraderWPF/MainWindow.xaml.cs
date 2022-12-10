@@ -33,9 +33,11 @@ namespace DayTraderWPF
         }
 
         private void BtnClickDashboard(object sender, RoutedEventArgs e)
-        {
-           
-                FrameForPageContent.Content = new DashboardPage();
+        {       
+                // below does not load xml
+                 FrameForPageContent.Navigate(typeof(DashboardPage));
+
+                //FrameForPageContent.Content = new DashboardPage();
         }
 
 
