@@ -68,26 +68,27 @@
     <Compile Include="ViewModels\MainWindowViewModels\DashBoardMainViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Compile Include="Views\DashBoard.xaml.cs">
-      <DependentUpon>DashBoard.xaml</DependentUpon>
+    <Compile Include="Views\Components\NewsView.xaml.cs">
+      <DependentUpon>NewsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\LogIn.xaml.cs">
-      <DependentUpon>LogIn.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MainWindowView.xaml.cs">
-      <DependentUpon>MainWindowView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SecondWindow.xaml.cs">
-      <DependentUpon>SecondWindow.xaml</DependentUpon>
+    <Compile Include="Views\DiscoverPage.xaml.cs">
+      <DependentUpon>DiscoverPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\PortfolioPage.xaml.cs">
+      <DependentUpon>PortfolioPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Components\NewsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,19 +96,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\LogIn.xaml">
+    <Page Include="Views\DiscoverPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainWindowView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\SecondWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\DashBoard.xaml">
+    <Page Include="Views\PortfolioPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

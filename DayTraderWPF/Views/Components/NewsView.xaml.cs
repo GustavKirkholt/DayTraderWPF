@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DayTraderWPF.Views
+namespace DayTraderWPF.Views.Components
 {
     /// <summary>
-    /// Interaction logic for MainWindowView.xaml
+    /// Interaction logic for NewsView.xaml
     /// </summary>
-    public partial class MainWindowView : UserControl
+    public partial class NewsView : UserControl
     {
-        public MainWindowView()
+        public NewsView()
         {
             InitializeComponent();
         }

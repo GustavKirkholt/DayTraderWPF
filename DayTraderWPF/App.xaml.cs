@@ -1,6 +1,7 @@
 ﻿using DayTraderWPF.Models;
 using DayTraderWPF.Stores;
 using DayTraderWPF.ViewModels;
+using DayTraderWPF.Views;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -33,6 +34,8 @@ namespace DayTraderWPF
             {
                 DataContext = new DashboardViewModel(_selectedStocksStore)
             };
+
+
             MainWindow.Show();
 
             base.OnStartup(e);

@@ -23,16 +23,34 @@ namespace DayTraderWPF
         {
             var balance = BankAccount.Instance.Balance;
             InitializeComponent();
+            FrameForPageContent.Content = new DashboardPage();
+
         }
 
         private void FrameForPageContent_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
         {
-
+            
         }
 
         private void BtnClickDashboard(object sender, RoutedEventArgs e)
         {
-            FrameForPageContent.Content = new DashboardPage();
+           
+                FrameForPageContent.Content = new DashboardPage();
         }
+
+
+        private void BtnClickDiscover(object sender, RoutedEventArgs e)
+        {
+            FrameForPageContent.Content = new DiscoverPage();
+        }
+
+
+        private void BtnClickPortfolio(object sender, RoutedEventArgs e)
+        {
+            FrameForPageContent.Content = new PortfolioPage();
+        }
+
+
+
     }
 }
