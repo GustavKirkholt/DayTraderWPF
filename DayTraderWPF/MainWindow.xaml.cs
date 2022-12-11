@@ -1,4 +1,6 @@
 ﻿using DayTraderWPF.Models;
+using DayTraderWPF.Stores;
+using DayTraderWPF.ViewModels;
 using DayTraderWPF.Views;
 using System;
 using System.Collections.Generic;
@@ -24,6 +26,7 @@ namespace DayTraderWPF
             var balance = BankAccount.Instance.Balance;
             InitializeComponent();
             FrameForPageContent.Content = new DashboardPage();
+            
 
         }
 
