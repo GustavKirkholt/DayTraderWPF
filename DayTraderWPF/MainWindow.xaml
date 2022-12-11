@@ -8,37 +8,8 @@
         Title="DayTrader" Height="450" Width="800" FontWeight="Bold">
     <Grid>
 
-        <!--Navbar panel-->
-        <StackPanel Orientation="Vertical" Width="95" HorizontalAlignment="Left"  Background="#242d38">
-            <Image Source="C:\Users\XaDgs\Documents\GitHub\DayTraderWPF\DayTraderWPF\Resources\Images\LogoDarkGreyBackground.png"/>
-            <Button Content="Dashboard" Click="BtnClickDashboard"  Margin="5" FontSize="10" FontWeight="Bold"/>
-            <Button Content="Discover" Click="BtnClickDiscover" Margin="5" FontSize="10" FontWeight="Bold"/>
-            <Button Content="Portfolio" Click="BtnClickPortfolio" Margin="5" FontSize="10" FontWeight="Bold"/>
-
-
-        </StackPanel>
-
-
-        <!--Topsection (balance, UserName)-->
-        <Grid Height="34" VerticalAlignment="Top" HorizontalAlignment="Right" Width="705" Margin="95,0,0,0" >
-            <TextBlock HorizontalAlignment="Left" Margin="450,0,0,0" TextWrapping="Wrap" Text="TextBlock Balance TODO" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="629,0,0,0" TextWrapping="Wrap" Text="TraderHenrik" VerticalAlignment="Center"/>
-        </Grid>
-
-
-
-        <!--Frame to display Views(Pages)-->
-        <Frame x:Name="FrameForPageContent" Margin="95,35,3,1"
-               Background="#ececf1"
-               NavigationUIVisibility="Hidden"
-               Navigated="FrameForPageContent_Navigated"
-               />
-
-
-
+        <views:DashboardPage/>
+        
     </Grid>
-
-
-
 
 </Window>

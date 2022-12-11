@@ -32,7 +32,7 @@ namespace DayTraderWPF
 
             MainWindow = new MainWindow()
             {
-                DataContext = new DashboardViewModel(_selectedStocksStore)
+                DataContext = new DashboardViewModel()
             };
 
 
