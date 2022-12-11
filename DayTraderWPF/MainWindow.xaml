@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DayTraderWPF" xmlns:views="clr-namespace:DayTraderWPF.Views"
         mc:Ignorable="d"
-        Title="DayTrader" Height="450" Width="800">
+        Title="DayTrader" Height="450" Width="800" FontWeight="Bold">
     <Grid>
 
         <!--Navbar panel-->
-        <StackPanel Orientation="Vertical" Width="95" HorizontalAlignment="Left"  Background="#A3A3A8">
-            <Image Source="C:\Users\XaDgs\Documents\GitHub\DayTraderWPF\DayTraderWPF\Resources\Images\LogoGreyBackground.png"/>
+        <StackPanel Orientation="Vertical" Width="95" HorizontalAlignment="Left"  Background="#242d38">
+            <Image Source="C:\Users\XaDgs\Documents\GitHub\DayTraderWPF\DayTraderWPF\Resources\Images\LogoDarkGreyBackground.png"/>
             <Button Content="Dashboard" Click="BtnClickDashboard"  Margin="5" FontSize="10" FontWeight="Bold"/>
             <Button Content="Discover" Click="BtnClickDiscover" Margin="5" FontSize="10" FontWeight="Bold"/>
             <Button Content="Portfolio" Click="BtnClickPortfolio" Margin="5" FontSize="10" FontWeight="Bold"/>
