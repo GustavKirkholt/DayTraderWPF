@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace DayTraderWPF.Views
 {
     /// <summary>
-    /// Interaction logic for DashboardPage.xaml
+    /// Interaction logic for DashBoardView.xaml
     /// </summary>
-    public partial class DashboardPage : Page
+    public partial class DashBoardView : UserControl
     {
-        public DashboardPage()
+        public DashBoardView()
         {
             InitializeComponent();
         }

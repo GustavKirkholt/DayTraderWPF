@@ -5,11 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DayTraderWPF" xmlns:views="clr-namespace:DayTraderWPF.Views"
         mc:Ignorable="d"
-        Title="DayTrader" Height="450" Width="800" FontWeight="Bold">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-
-        <views:DashboardPage/>
-        
+        <views:DashBoardView/>
     </Grid>
-
 </Window>
