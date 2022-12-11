@@ -65,7 +65,6 @@
     <Compile Include="ViewModels\ListViewModel\DashBoardListItemViewModels.cs" />
     <Compile Include="ViewModels\ListViewModel\DashBoardListViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModels\DashboardMainDetailsViewModel.cs" />
-    <Compile Include="ViewModels\MainWindowViewModels\DashBoardMainViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\Components\NewsView.xaml.cs">

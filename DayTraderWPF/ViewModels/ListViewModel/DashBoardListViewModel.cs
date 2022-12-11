@@ -39,6 +39,7 @@ namespace DayTraderWPF.ViewModels
             _dashBoardListItemViewModels = new ObservableCollection<DashBoardListItemViewModels>();
 
             _dashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(11m, 9m, 1m, 11m, "Aktie 1", 10m, true)));
+
         }
     }
 }
