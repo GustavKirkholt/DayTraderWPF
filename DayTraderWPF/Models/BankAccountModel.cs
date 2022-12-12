@@ -17,13 +17,7 @@ namespace DayTraderWPF.Models
 
         public virtual void Withdraw(decimal amount)
         {
-
-
-            if (Balance - amount < 0)
-            {
                 Balance -= amount;
-            }
-            else Conflict();
         }
 
         public virtual void Deposit(decimal amount)
@@ -35,13 +29,6 @@ namespace DayTraderWPF.Models
         {
             return "account holds" +
                   +Balance + " kroner";
-        }
-
-        public string Conflict()
-        {
-
-        return "Insufficient funds";
-
         }
 
     }

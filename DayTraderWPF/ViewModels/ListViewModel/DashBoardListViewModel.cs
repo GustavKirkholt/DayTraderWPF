@@ -41,11 +41,13 @@ namespace DayTraderWPF.ViewModels
 
             _DashBoardListItemViewModels = new ObservableCollection<DashBoardListItemViewModels>();
 
-            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(10000, 8000, 2000, 9000, "Aktie 1", 9500, true)));
-            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(50000, 45000, 5000, 49000, "Aktie 2", 49500, false)));
-            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(30000, 28000, 2000, 29000, "Aktie 3", 29000, true)));
-            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(20000, 8000, 12000, 10000, "Aktie 4", 18000, false)));
-            
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(10000, 8000, 2000, 9000, "A.P Møller - Mærsk A", 9500, true)));
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(50000, 45000, 5000, 49000, "Tesla, Inc.", 49500, false)));
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(30000, 28000, 2000, 29000, "Amazon.com", 29000, true)));
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(20000, 8000, 12000, 10000, "A.P Møller - Mærsk B", 18000, false)));
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(100000, 90000, 10000, 92000, "Berkshire Hathaway Inc Class A", 98000, false)));
+            _DashBoardListItemViewModels.Add(new DashBoardListItemViewModels(new Stocks(500, 400, 100, 450, "Netcompany Group", 500, false)));  
+
         }
     }
 

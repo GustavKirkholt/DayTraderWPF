@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DayTraderWPF.Models;
+using DayTraderWPF.Stores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,13 @@ namespace DayTraderWPF.Views.Components
     /// </summary>
     public partial class StocksDetails : UserControl
     {
+
+
         public StocksDetails()
         {
             InitializeComponent();
+
         }
+       
     }
 }

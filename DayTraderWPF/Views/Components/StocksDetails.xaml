@@ -28,7 +28,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" Text="Price" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="0" Text="Price(DKK)" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding Price}" Margin="50 0 0 0"/>
 
                 </Grid>
@@ -39,7 +39,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" Text="High Price" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="0" Text="High Price(DKK)" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding HighPrice}" Margin="20 0 0 0"/>
 
                 </Grid>
@@ -50,7 +50,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" Text="Low Price" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="0" Text="Low Price(DKK)" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding LowPrice}" Margin="25 0 0 0"/>
 
                 </Grid>
@@ -61,7 +61,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" Text="Change" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="0" Text="Change(DKK)" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding Change}" Margin="37 0 0 0"/>
 
                 </Grid>
@@ -72,7 +72,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" Text="Opening" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="0" Text="Opening(DKK)" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding Opening}"  Margin="31 0 0 0"/>
 
                 </Grid>
@@ -87,7 +87,7 @@
                     <TextBlock 
                         Grid.Column="1" 
                         Text="{Binding IsOwnedDisplay}" 
-                        Margin="28 0 0 0">
+                        Margin="61 0 0 0">
                     </TextBlock>
 
                 </Grid>
@@ -98,7 +98,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button Content="Sell" Margin="0 10 50 0" Width="50" Height="24" Background="Red" BorderThickness="0" DataContext="{Binding SellStockCommand}">
+                    <Button Content="Sell" Margin="5,10,55,0" Height="24" Background="Red" BorderThickness="0" Command="{Binding SellStockCommand}">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="5"/>
@@ -107,7 +107,7 @@
                         </Button.Resources>
                     </Button>
 
-                    <Button Content="Buy" Margin="60 10 0 0" Width="50" Height="24" Background="Green" BorderThickness="0" DataContext="{Binding BuyStockCommand}">
+                    <Button Content="Buy" Margin="60 10 0 0" Width="50" Height="24" Background="Green" BorderThickness="0" Command="{Binding BuyStockCommand}">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="5"/>
@@ -115,7 +115,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-                    
+
                 </Grid>
 
             </Grid>

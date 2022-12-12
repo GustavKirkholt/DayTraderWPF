@@ -1,10 +1,12 @@
-﻿using DayTraderWPF.Models;
+﻿using DayTraderWPF.Commands;
+using DayTraderWPF.Models;
 using DayTraderWPF.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DayTraderWPF.ViewModels
 {
@@ -13,6 +15,7 @@ namespace DayTraderWPF.ViewModels
         private readonly StocksStore _selectedStockStore;
 
         private Stocks SelectedStock => _selectedStockStore.SelectedStock;
+
 
         public string StockName => SelectedStock?.Name;
         public decimal Price => SelectedStock?.Price ?? 0;
@@ -26,8 +29,7 @@ namespace DayTraderWPF.ViewModels
         {
             _selectedStockStore= selectedStockStore;
             _selectedStockStore.SelectedStockChanged += SelectedStockStore_SelectedStockChanged;
-           
-           
+
         }
 
         private void SelectedStockStore_SelectedStockChanged() 
