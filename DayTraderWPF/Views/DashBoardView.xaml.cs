@@ -23,6 +23,7 @@ namespace DayTraderWPF.Views
         public DashBoardView()
         {
             InitializeComponent();
+
         }
     }
 }

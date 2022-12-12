@@ -17,11 +17,11 @@ namespace DayTraderWPF.ViewModels
 
         public DashboardMainDetailsViewModel DashboardMainDetailsViewModel { get; }
 
-
-        public DashboardViewModel() 
+      
+        public DashboardViewModel(StocksStore _selectedStockStore) 
         {
-            DashBoardListViewModel = new DashBoardListViewModel();
-            DashboardMainDetailsViewModel = new DashboardMainDetailsViewModel();    
+            DashBoardListViewModel = new DashBoardListViewModel(_selectedStockStore);
+            DashboardMainDetailsViewModel = new DashboardMainDetailsViewModel(_selectedStockStore);    
         }
 
     }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.Stores
 {
-    internal class StocksStore
+    public class StocksStore
     {
         private Stocks _selectedStock;
 
-        public Stocks SelectedStocks
+        public Stocks SelectedStock
         {
             get 
             { 
@@ -21,12 +21,12 @@ namespace DayTraderWPF.Stores
             set 
             { 
                 _selectedStock = value;
-                SelectedStocksChanged?.Invoke();
+                SelectedStockChanged?.Invoke();
             }
             
         }
 
-        public event Action SelectedStocksChanged;
+        public event Action SelectedStockChanged;
 
     }
 

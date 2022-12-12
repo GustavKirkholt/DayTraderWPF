@@ -19,20 +19,22 @@ namespace DayTraderWPF
     {
 
         private readonly StocksStore _selectedStocksStore;
+        private readonly BankAccountStore _selectedBankAccountStore;
 
         public App() 
         {
             _selectedStocksStore = new StocksStore();
-            
+            //_selectedBankAccountStore = new BankAccountStore();
+
         }
         protected override void OnStartup(StartupEventArgs e)
         {
             
-            BankAccount bankAccount = BankAccount.Instance;
+            //BankAccount bankAccount = BankAccount.Instance;
 
             MainWindow = new MainWindow()
             {
-                DataContext = new DashboardViewModel()
+                DataContext = new DashboardViewModel(_selectedStocksStore)
             };
 
 

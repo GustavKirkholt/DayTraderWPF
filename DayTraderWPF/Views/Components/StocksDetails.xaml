@@ -20,7 +20,7 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Text="AktieNavn" FontSize="28"/>
+                <TextBlock Grid.Row="0" Text="{Binding StockName}" FontSize="28"/>
 
                 <Grid Grid.Row="1" Margin="0 5 0 0">
                     <Grid.ColumnDefinitions>
@@ -29,7 +29,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="Price" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Amount" Margin="50 0 0 0"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Price}" Margin="50 0 0 0"/>
 
                 </Grid>
 
@@ -40,7 +40,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="High Price" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Amount" Margin="20 0 0 0"/>
+                    <TextBlock Grid.Column="1" Text="{Binding HighPrice}" Margin="20 0 0 0"/>
 
                 </Grid>
 
@@ -51,7 +51,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="Low Price" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Amount" Margin="25 0 0 0"/>
+                    <TextBlock Grid.Column="1" Text="{Binding LowPrice}" Margin="25 0 0 0"/>
 
                 </Grid>
 
@@ -62,7 +62,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="Change" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Amount" Margin="37 0 0 0"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Change}" Margin="37 0 0 0"/>
 
                 </Grid>
 
@@ -73,7 +73,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="Opening" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Amount"  Margin="31 0 0 0"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Opening}"  Margin="31 0 0 0"/>
 
                 </Grid>
 
@@ -84,7 +84,11 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="Is Owned" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Yes" Margin="28 0 0 0"/>
+                    <TextBlock 
+                        Grid.Column="1" 
+                        Text="{Binding IsOwnedDisplay}" 
+                        Margin="28 0 0 0">
+                    </TextBlock>
 
                 </Grid>
 
@@ -113,8 +117,6 @@
                     </Button>
                     
                 </Grid>
-
-
 
             </Grid>
         </Border>

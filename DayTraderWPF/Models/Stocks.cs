@@ -8,53 +8,24 @@ namespace DayTraderWPF.Models
 {
     public class Stocks
     {
-        protected decimal price;
-        protected decimal highPrice;
-        protected decimal lowPrice;
-        protected decimal change;
-        protected decimal opening;
-        protected string name;
-        protected Boolean isOwned;
+        public decimal Price { get; }
+        public decimal HighPrice { get; }
+        public decimal LowPrice { get; }
+        public decimal Change { get; }
+        public decimal Opening { get; }
+        public string Name { get; }
+        public Boolean IsOwned { get; set; }
 
-        public Stocks(decimal h, decimal l, decimal change, decimal opening, string n, decimal  p, bool isOwned)
+        public Stocks(decimal highprice, decimal lowprice, decimal change, decimal opening, string name, decimal price, bool isOwned)
         {
-            this.highPrice = h;
-            this.lowPrice = l;
-            this.change = change;
-            this.opening = opening;
-            this.name = n;
-            this.price = p;
-            this.isOwned = isOwned;
+            HighPrice = highprice;
+            LowPrice = lowprice;
+            Change = change;
+            Opening = opening;
+            Name = name;
+            Price = price;
+            IsOwned = isOwned;
         }
-
-
-        public virtual decimal HighPrice
-        {
-            get { return highPrice; }
-        }
-
-        public virtual decimal LowPrice
-        {
-            get { return lowPrice; }
-        }
-
-        public virtual string Name
-        {
-            get { return name; }
-        }
-
-        public virtual decimal Change
-        {
-            get { return change; }
-        }
-
-        public virtual decimal Opening
-        {
-            get { return opening; }
-        }
-
-        public bool IsOwned { get; internal set; }
-        public decimal GetPrice { get; internal set; }
 
         public virtual decimal Transaction(decimal price)
         {
@@ -64,7 +35,7 @@ namespace DayTraderWPF.Models
         public override string ToString()
         {
             return "The stock price is" +
-                  +price + " kroner";
+                  +Price + " kroner";
         }
     }
 }

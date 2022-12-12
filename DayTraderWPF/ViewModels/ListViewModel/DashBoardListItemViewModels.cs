@@ -8,9 +8,15 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.ViewModels
 {
-    internal class DashBoardListItemViewModels : ViewModelBase
+    public class DashBoardListItemViewModels : ViewModelBase
     {
-       
+        public Stocks Stock { get; }
 
+        public string Name => Stock.Name;
+
+       public DashBoardListItemViewModels(Stocks stocks)
+       {
+            Stock = stocks;
+        }
     }
 }
