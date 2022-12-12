@@ -3,7 +3,7 @@
 The technologies
 The project is build on the following technologies:
 
-TBD
+WPF, C# with .NET Framework 4.7.2
 
 Running the project
-TBD
+To run the project, create a release file and run the .exe file located in bin<relase.
