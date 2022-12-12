@@ -6,45 +6,35 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.Models
 {
-    public class BankAccount
+    public class BankAccountModel
     {
-        protected decimal balance;
-        private static BankAccount instance = new BankAccount(100M);
-        private BankAccount(decimal b)
-        {
-            balance = b;
-        }
+        public decimal Balance { get; set; }
 
-        public static BankAccount Instance
+        public BankAccountModel(decimal balance)
         {
-            get { return instance; }
-        }
-
-        public virtual decimal Balance
-        {
-            get { return balance; }
+            Balance = balance;
         }
 
         public virtual void Withdraw(decimal amount)
         {
 
 
-            if (balance - amount < 0)
+            if (Balance - amount < 0)
             {
-                balance -= amount;
+                Balance -= amount;
             }
             else Conflict();
         }
 
         public virtual void Deposit(decimal amount)
         {
-            balance += amount;
+            Balance += amount;
         }
 
         public override string ToString()
         {
             return "account holds" +
-                  +balance + " kroner";
+                  +Balance + " kroner";
         }
 
         public string Conflict()

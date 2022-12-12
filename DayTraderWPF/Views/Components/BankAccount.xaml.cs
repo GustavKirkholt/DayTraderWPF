@@ -1,8 +1,4 @@
-﻿using DayTraderWPF.Models;
-using DayTraderWPF.Stores;
-using DayTraderWPF.ViewModels;
-using DayTraderWPF.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DayTraderWPF
+namespace DayTraderWPF.Views.Components
 {
-    
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for BankAccount.xaml
+    /// </summary>
+    public partial class BankAccount : UserControl
     {
-        public MainWindow()
+        public BankAccount()
         {
-          
             InitializeComponent();
-       
-
         }
-
     }
 }

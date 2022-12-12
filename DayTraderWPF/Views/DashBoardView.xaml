@@ -32,6 +32,8 @@
 
             <components:StocksDetails Grid.Column="1" Margin="10 50 0 0" DataContext="{Binding DashboardMainDetailsViewModel}"/>
 
+            <components:BankAccount Grid.Column="0" Margin="0 300 0 0" DataContext="{Binding BankAccountViewModel}"/>
+
         </Grid>
     </Grid>
 </UserControl>

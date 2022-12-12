@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DayTraderWPF.Stores;
 using System.Windows.Input;
+using DayTraderWPF.ViewModels.BankAccount;
 
 namespace DayTraderWPF.ViewModels
 {
@@ -17,11 +18,14 @@ namespace DayTraderWPF.ViewModels
 
         public DashboardMainDetailsViewModel DashboardMainDetailsViewModel { get; }
 
-      
-        public DashboardViewModel(StocksStore _selectedStockStore) 
+        public BankAccountViewModel BankAccountViewModel { get; }
+
+
+        public DashboardViewModel(StocksStore _selectedStockStore, BankAccountStore _selectedBankAccountStore) 
         {
             DashBoardListViewModel = new DashBoardListViewModel(_selectedStockStore);
-            DashboardMainDetailsViewModel = new DashboardMainDetailsViewModel(_selectedStockStore);    
+            DashboardMainDetailsViewModel = new DashboardMainDetailsViewModel(_selectedStockStore);
+            BankAccountViewModel = new BankAccountViewModel(_selectedBankAccountStore);
         }
 
     }

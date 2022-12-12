@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DayTraderWPF.Stores
 {
-    internal class BankAccountStore
+    public class BankAccountStore
     {
         
-            private BankAccount _selectedBankAccount;
+            private BankAccountModel _selectedBankAccount;
 
-            public BankAccount BankAccount
+            public BankAccountModel SelectedBankAccount
             {
                 get
                 {

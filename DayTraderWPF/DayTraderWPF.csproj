@@ -59,15 +59,19 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\BankAccount.cs" />
+    <Compile Include="Models\BankAccountModel.cs" />
     <Compile Include="Models\Stocks.cs" />
     <Compile Include="Stores\BankAccountStore.cs" />
     <Compile Include="Stores\StocksStore.cs" />
+    <Compile Include="ViewModels\BankAccount\BankAccountViewModel.cs" />
     <Compile Include="ViewModels\ListViewModel\DashBoardListItemViewModels.cs" />
     <Compile Include="ViewModels\ListViewModel\DashBoardListViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModels\DashboardMainDetailsViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\Components\BankAccount.xaml.cs">
+      <DependentUpon>BankAccount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Components\NewsView.xaml.cs">
       <DependentUpon>NewsView.xaml</DependentUpon>
     </Compile>
@@ -85,6 +89,10 @@
       <DependentUpon>DashBoardView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Components\BankAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

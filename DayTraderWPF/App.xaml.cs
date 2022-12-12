@@ -24,7 +24,7 @@ namespace DayTraderWPF
         public App() 
         {
             _selectedStocksStore = new StocksStore();
-            //_selectedBankAccountStore = new BankAccountStore();
+            _selectedBankAccountStore = new BankAccountStore();
 
         }
         protected override void OnStartup(StartupEventArgs e)
@@ -34,7 +34,7 @@ namespace DayTraderWPF
 
             MainWindow = new MainWindow()
             {
-                DataContext = new DashboardViewModel(_selectedStocksStore)
+                DataContext = new DashboardViewModel(_selectedStocksStore, _selectedBankAccountStore)
             };
 
 
